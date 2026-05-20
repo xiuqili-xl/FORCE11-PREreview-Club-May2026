@@ -14,32 +14,34 @@ Link of final dataset review: forthcoming
 
 ```text
 .
-├── .gitignore
-├── code/                                     # R script used to examine and review the dataset
+├── code/                                                   # R script used to examine and review the dataset
 │   └── 001-Dryad-dataset-analysis.R          
-├── data_Dryad/                               # Dataset files downloaded directly from Dryad
+├── data_Dryad/                                             # Dataset files downloaded directly from Dryad
 │   └── AAAS_Open_Science_Metrics_data_2021_to_2024.csv
 │   └── Summary_data_Science_and_comparators_.csv
+├── .gitignore
 ├── LICENSE
 ├── README.md
-└── Vinson Dyrad 2025.Rproj                       # RStudio project file
+└── Vinson Dyrad 2025.Rproj                                 # RStudio project file
 ```
 
 
 ## Analysis notes
 
-## Code
+### Code
 
-The analysis script was used to inspect the Dryad dataset during review. It includes checks of selected statements from the dataset metadata and internal consistency around data sharing, code sharing, preprint information, and summary statistics.
+The analysis script was used to inspect the Dryad dataset during review. It includes checks of selected statements from the dataset metadata (i.e., key findings) and internal consistency between variables.
 
-The script was written for speed during the review process, not as a fully reproducible research workflow. It should be read as review-supporting code rather than a polished analysis pipeline.
+**The script was written for speed** during the review process, not as a fully reproducible research workflow. It should be read as review-supporting code rather than a polished analysis pipeline.
 
-## Data
+### Data
 
 The files in `data_Dryad/` were downloaded directly from the Dryad deposit cited above (no modifications):
 
 - `AAAS_Open_Science_Metrics_data_2021_to_2024.csv`
 - `Summary_data_Science_and_comparators_.csv`
 
-Please cite the [Dryad dataset](https://doi.org/10.5061/dryad.zkh1893qt) directly when reusing or discussing the data.
+For detailed description of the original project and metadata for these two csv files, please refer to the README file of the [Dryad deposit](https://doi.org/10.5061/dryad.zkh1893qt).
+
+**Please cite the [Dryad dataset](https://doi.org/10.5061/dryad.zkh1893qt) directly when reusing or discussing the data.**
 
