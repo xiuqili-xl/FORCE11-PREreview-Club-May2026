@@ -7,6 +7,8 @@ library(here)
 ## The following analysis was completed during/after the FORCE11 live review discussion
 ## This script explores some of the topics raised during the live discussion
 
+article_data <- read_csv(here("data_Dryad", "AAAS_Open_Science_Metrics_data_2021_to_2024.csv"))
+
 
 
 # Regional bias of the dataset ----
@@ -89,6 +91,8 @@ library(openalexR)
 library(listviewer)
 library(purrr)
 
+## Note, if just interested in the dataset, skip to read_csv()
+
 
 ## OpenAlex now requires an API key: https://docs.ropensci.org/openalexR/
 ## Replace "ADD KEY" below with actual API key. Remember to rotate API key regularly!
@@ -129,6 +133,10 @@ science_oa_df <- map_dfr(science_oa_data, ~tibble(
 write_csv(science_oa_df, here("data_OpenAlex", "science_openalex_2021-2024.csv"))
 
 
+## read in saved copy of science_oa_df
+science_oa_df <- read_csv(here("data_OpenAlex", "science_openalex_2021-2024.csv"))
+
+
 
 ## Publication across the years ----
 science_oa_df %>%
@@ -139,13 +147,13 @@ science_oa_df %>%
   labs(title = "Number of publications in Science",
        x = "", y = "no of articles", fill = "Type")
 
+article_data %>% count(Publication_Year)
 ## note, number of articles in Vinson dataset
 ## 2021 - 708; 2022 - 664; 2023 - 581; 2024 - 727
 
 
 ## compare OpenAlex and Vinson dataset
 science_oa_df %>%
-  mutate(in_vinson = (doi %in% article_data$DOI)) %>%
   count(in_vinson, article_type) %>%
   ## data in Vinson et al are mostly tagged as article in OpenAlex 
   ## (a couple are tagged as editorial, preprint, review)
@@ -157,7 +165,6 @@ science_oa_df %>%
 ## spot check a couple
 ### (1) article in OpenAlex, but not in Vinson et al -- 5,245 entries
 science_oa_df %>%
-  mutate(in_vinson = (doi %in% article_data$DOI)) %>%
   filter(article_type == "article", in_vinson == FALSE) %>%
   view()
 ### 10.1126/science.abq1757 --- perspective
@@ -169,7 +176,6 @@ science_oa_df %>%
 
 ### (2) preprints according to OpenAlex and included in Vinson et al -- 20 entries
 science_oa_df %>%
-  mutate(in_vinson = (doi %in% article_data$DOI)) %>%
   filter(article_type == "preprint", in_vinson == TRUE) %>%
   view()
 ### 10.1126/science.abl5818 --- report
@@ -179,7 +185,6 @@ science_oa_df %>%
 
 ### (3) review according to OpenAlex and included in Vinson et al -- 5 entries
 science_oa_df %>%
-  mutate(in_vinson = (doi %in% article_data$DOI)) %>%
   filter(article_type == "review", in_vinson == TRUE) %>%
   view()
 ### 10.1126/science.adj6598 --- research article
