@@ -59,6 +59,8 @@ The files in `data_comparison/` were downloaded directly from the following Figs
 > Taylor-Grant, Rebecca; Norris, Eilise (2025). *Open Science Indicators for a corpus of 8,131 research articles published by Taylor & Francis journals.* 
 > [Dataset; License CC BY 4.0]. Figshare. <https://doi.org/10.6084/m9.figshare.30316342>
 
+The csv file in `data_OpenAlex/` were generated using code in `003-analysis-post-live-review.R`, containing data obtained from OpenAlex.
+
 For detailed descriptions of the original projects and metadata, please refer to the documentation each dataset.
 
 **Please cite the original datasets directly when reusing or discussing the data.**
