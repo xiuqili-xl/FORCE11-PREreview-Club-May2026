@@ -54,8 +54,7 @@ The files in `data_comparison/` were downloaded directly from the following Figs
 > PLOS Figshare. <https://doi.org/10.6084/m9.figshare.21687686.v10>
 
 > Taylor-Grant, Rebecca; Norris, Eilise (2025). *Open Science Indicators for a corpus of 8,131 research articles published by Taylor & Francis journals.* 
-> [Dataset; License CC BY 4.0]. Figshare.
-> <https://doi.org/10.5061/dryad.zkh1893qt>
+> [Dataset; License CC BY 4.0]. Figshare. <https://doi.org/10.6084/m9.figshare.30316342>
 
 For detailed descriptions of the original projects and metadata, please refer to the documentation each dataset.
 

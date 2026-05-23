@@ -3,6 +3,12 @@ library(tidyverse)
 library(here)
 
 
+# Data source ----
+## Vinson, Valda; Kmec, Lauren (2025). Leveraging metrics to drive data sharing at the Science journals 
+## [Dataset; License CC0 1.0]. Dryad. https://doi.org/10.5061/dryad.zkh1893qt
+
+
+
 # Import data ----
 article_data <- read_csv(here("data_Dryad", "AAAS_Open_Science_Metrics_data_2021_to_2024.csv"))
 glimpse(article_data)

@@ -3,6 +3,17 @@ library(tidyverse)
 library(readxl)
 library(here)
 
+
+# Data source ----
+
+## Public Library of Science (2025). PLOS Open Science Indicators. [Dataset; License CC BY 4.0]. 
+## PLOS Figshare. https://doi.org/10.6084/m9.figshare.21687686.v10
+
+## Taylor-Grant, Rebecca; Norris, Eilise (2025). Open Science Indicators for a corpus of 
+## 8,131 research articles published by Taylor & Francis journals. [Dataset; License CC BY 4.0]. 
+## Figshare. https://doi.org/10.6084/m9.figshare.30316342
+
+
 # Import data ----
 plos_data <- read_csv(here("data_comparison", "PLOS_Dataset_v10_Jul25.csv"))
 glimpse(plos_data)
