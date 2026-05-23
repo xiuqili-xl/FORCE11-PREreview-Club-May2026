@@ -16,7 +16,8 @@ Link of final dataset review: forthcoming
 .
 ├── code/                                                   # R script used to examine and review the dataset
 │   └── 001-Dryad-dataset-analysis.R          
-│   └── 002-Comparison-dataset-analysis.R          
+│   └── 002-Comparison-dataset-analysis.R      
+│   └── 003-analysis-post-live-review.R      
 ├── data_comparison/                                        # Dataset files downloaded directly from Figshare
 │   └── PLOS_Dataset_v10_Jul25.csv
 │   └── PLOS_OSI_Summary-statistics_v10_Jul25.xlsx
@@ -26,6 +27,8 @@ Link of final dataset review: forthcoming
 ├── data_Dryad/                                             # Dataset files downloaded directly from Dryad
 │   └── AAAS_Open_Science_Metrics_data_2021_to_2024.csv
 │   └── Summary_data_Science_and_comparators_.csv
+├── data_OpenAlex/                                          # Dataset pulled from OpenAlex
+│   └── science_openalex_2021-2024.csv
 ├── .gitignore
 ├── LICENSE
 ├── README.md

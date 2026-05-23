@@ -1,6 +1,9 @@
 # Mac file
 .DS_Store
 
+# Environment file
+.Renviron
+
 # History files
 .Rhistory
 .Rapp.history

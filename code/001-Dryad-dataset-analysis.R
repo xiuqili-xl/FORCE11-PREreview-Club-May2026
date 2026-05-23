@@ -160,14 +160,14 @@ article_data %>%
 view(summary_stats)
 
 ## Key stats relevant for this study
-## (1) Science data sharing data overall: 1846 (69%)
+## (1) Science data sharing data overall: 1846 (69%) ----
 article_data %>%
    count(Data_Generated, Data_Shared, name = "count") %>%
    mutate(percent = count / sum(count) * 100)
 ## 1846 (69%) sharing data overall: include both that generate data and that doesn't
 
 
-## (2) Science sharing data in a repository: 1488 (56%)
+## (2) Science sharing data in a repository: 1488 (56%) ----
 article_data %>% 
   count(Data_Shared, Data_Location)
 ## Data shared online 986 + 739 = 1725, higher than data shared in a repository
@@ -186,13 +186,13 @@ article_data %>%
 ## 238 of these
 
 
-## (3) Science generating code: 1442
+## (3) Science generating code: 1442 ----
 article_data %>%
   count(Code_Generated)
 ## matches the 1442 count reported in summary_stats
 
 
-## (4) Science sharing generated code 594 (41%)
+## (4) Science sharing generated code 594 (41%) ----
 article_data %>%
   count(Code_Generated, Code_Shared, name = "count") %>%
   mutate(percent = count / sum(count) * 100)
@@ -205,41 +205,3 @@ article_data %>%
 # matches 594 count; 41% is based on calculation of those that generated code
 
 
-
-# From FORCE11 live review discussion ----
-## regional bias
-article_data %>%
-  count(First_Author_Country) %>%
-  arrange(desc(n))
-
-## sudden jump in percent article that generate data between 2022 and 2023
-article_data %>%
-  count(Publication_Year, Data_Generated) %>%
-  group_by(Publication_Year) %>%
-  mutate(percent = n / sum(n) * 100) %>%
-  ungroup() %>%
-  filter(Data_Generated == "Yes")
-
-## check Data_Shared --- steady increase
-article_data %>%
-  count(Publication_Year, Data_Shared) %>%
-  group_by(Publication_Year) %>%
-  mutate(percent = n / sum(n) * 100) %>%
-  ungroup() %>%
-  filter(Data_Shared == "Yes")
-
-## check Code_Generated --- relatively steady increase
-article_data %>%
-  count(Publication_Year, Code_Generated) %>%
-  group_by(Publication_Year) %>%
-  mutate(percent = n / sum(n) * 100) %>%
-  ungroup() %>%
-  filter(Code_Generated == "Yes")
-
-## check Code_Shared / Code_Generated --- relatively stable around 40%
-article_data %>%
-  count(Publication_Year, Code_Generated, Code_Shared) %>%
-  group_by(Publication_Year, Code_Generated) %>%
-  mutate(percent = n / sum(n) * 100) %>%
-  ungroup() %>%
-  filter(Code_Generated == "Yes", Code_Shared == "Yes")
