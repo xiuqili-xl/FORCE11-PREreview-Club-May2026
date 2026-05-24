@@ -44,7 +44,7 @@ The analysis scripts in `code/` were written to **support the dataset review**. 
 * `002-Comparison-dataset-check.R` compares selected Science metrics against those of [PLOS](https://doi.org/10.6084/m9.figshare.21687686.v10) and [Taylor & Francis](https://doi.org/10.6084/m9.figshare.30316342) as reported by Vinson and Kmec.
 * `003-analysis-post-live-review.R` contains additional analyses completed during or after the FORCE11 live review discussion (May 22, 2026), including checks related to author country, year-to-year patterns, and comparison with OpenAlex data.
 
-Some scripts include interactive inspection steps such as view(). These are intended for manual review and may not run as a fully automated workflow from beginning to end.
+Some scripts include interactive inspection steps such as `view()`. These are intended for manual review and may not run as a fully automated workflow from beginning to end.
 
 
 
@@ -91,3 +91,11 @@ Several points should be kept in mind when interpreting the code and outputs:
 * OpenAlex data may change over time, so regenerated results may differ from the saved snapshot.
 
 **Please cite the original datasets directly when reusing or discussing the data.**
+
+
+
+## AI Coding Agent Use
+
+Generative AI (Codex, GPT-5.5, Medium Intelligence) was **only** used to draft README file, which has since been manually edited and updated to ensure accuracy.
+
+
