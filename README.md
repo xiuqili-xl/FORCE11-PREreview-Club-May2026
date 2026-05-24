@@ -69,7 +69,7 @@ The files in `data_comparison/` were downloaded directly from the following Figs
 > [Dataset; License CC BY 4.0]. Figshare. <https://doi.org/10.6084/m9.figshare.30316342>
 
 
-## OpenAlex Data
+### OpenAlex Data
 
 The csv file in `data_OpenAlex/` was generated using code in `code/003-analysis-post-live-review.R` and contains data obtained from OpenAlex on May 22, 2026.
 
