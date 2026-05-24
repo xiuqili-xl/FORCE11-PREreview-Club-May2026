@@ -96,6 +96,6 @@ Several points should be kept in mind when interpreting the code and outputs:
 
 ## AI Coding Agent Use
 
-Generative AI (Codex, GPT-5.5, Medium Intelligence) was **only** used to draft this `README.md` file, which has since been manually edited and updated to ensure accuracy.
+Generative AI (Codex, GPT-5.5, Medium Intelligence) was **only** used to draft this `README.md` file, which has since been reviewed and edited to ensure accuracy.
 
 
