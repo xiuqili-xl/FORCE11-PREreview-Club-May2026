@@ -75,7 +75,7 @@ The csv file in `data_OpenAlex/` was generated using code in `code/003-analysis-
 
 Because OpenAlex records are updated over time, `data_OpenAlex/science_openalex_2021-2024.csv` should be treated as a saved snapshot. Regenerating this file requires an OpenAlex API key and may produce different results depending on when the query is run.
 
-The saved OpenAlex file includes DOI, OpenAlex article ID, article type, publication date, open access status fields, and an indicator for whether the DOI appears in the Vinson and Kmec Dryad dataset.
+The saved OpenAlex file includes DOI (`doi`), OpenAlex article ID (`article_id`), article type (`article_type`), publication date (`publication_date`), open access status fields (`oa_is_oa`, `oa_status`, and `oa_fulltext`), and an indicator for whether the DOI appears in the Vinson and Kmec Dryad dataset (`in_vinson`).
 
 
 
@@ -85,10 +85,10 @@ This repository was created to **support a dataset review**, not to provide a de
 
 Several points should be kept in mind when interpreting the code and outputs:
 
-* The scripts were written for rapid review and exploratory checking.
-* Some outputs are inspected in the R console or viewer rather than saved as separate result files.
+* The scripts were written for rapid review and exploratory checking
+* Some outputs are inspected in the R console or viewer rather than saved as separate result files
 * Source datasets contain additional metadata that are referenced during the analysis, but are not captured in this repository
-* OpenAlex data may change over time, so regenerated results may differ from the saved snapshot.
+* OpenAlex data may change over time, so regenerated results may differ from the saved snapshot
 
 **Please cite the original datasets directly when reusing or discussing the data.**
 
@@ -96,6 +96,6 @@ Several points should be kept in mind when interpreting the code and outputs:
 
 ## AI Coding Agent Use
 
-Generative AI (Codex, GPT-5.5, Medium Intelligence) was **only** used to draft README file, which has since been manually edited and updated to ensure accuracy.
+Generative AI (Codex, GPT-5.5, Medium Intelligence) was **only** used to draft this `README.md` file, which has since been manually edited and updated to ensure accuracy.
 
 
