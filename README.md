@@ -2,12 +2,11 @@
 
 This repository contains review-supporting code and source data used to examine the Dryad dataset:
 
-> Vinson, Valda; Kmec, Lauren (2025). *Leveraging metrics to drive data sharing at the Science journals* [Dataset; CC0 1.0]. Dryad.
-> <https://doi.org/10.5061/dryad.zkh1893qt>
+> Vinson, Valda; Kmec, Lauren (2025). *Leveraging metrics to drive data sharing at the Science journals* [Dataset; CC0 1.0]. **Dryad**. <https://doi.org/10.5061/dryad.zkh1893qt>
 
-This dataset review was completed as part of the [FORCE11 PREreview Club](https://prereview.org/clubs/force11) and is intended for sharing on PREreview.
+This dataset review was collaboratively completed by the [FORCE11 PREreview Club](https://prereview.org/clubs/force11) and was shared on PREreview: 
 
-Final dataset review: forthcoming
+> Akuma, Ifeanyichukwu; Dogan, Guleda; Spick, Matt; Rogel-Salazar, Rosario; Li, Xiuqi (2026). *Structured PREreview of Leveraging metrics to drive data sharing at the Science journals.* **PREreview**. <https://prereview.org/reviews/1d1731cb-e9b9-4bb4-b636-98c235379cc6>. Also archived on Zenodo. <https://doi.org/10.5281/zenodo.20560856>.
 
 
 ## Repository Structure
@@ -54,19 +53,16 @@ Some scripts include interactive inspection steps such as `view()`. These are in
 
 The files in `data_Dryad/` were downloaded directly from the following Dryad deposit *without modifications*:
 
-> Vinson, Valda; Kmec, Lauren (2025). *Leveraging metrics to drive data sharing at the Science journals* [Dataset; License CC0 1.0]. Dryad.
-> <https://doi.org/10.5061/dryad.zkh1893qt>
+> Vinson, Valda; Kmec, Lauren (2025). *Leveraging metrics to drive data sharing at the Science journals* [Dataset; License CC0 1.0]. **Dryad**. <https://doi.org/10.5061/dryad.zkh1893qt>
 
 
 ### Comparison Data
 
 The files in `data_comparison/` were downloaded directly from the following Figshare data deposits *without modifications*:
 
-> Public Library of Science (2025). *PLOS Open Science Indicators.* [Dataset; License CC BY 4.0]. 
-> PLOS Figshare. <https://doi.org/10.6084/m9.figshare.21687686.v10>
+> Public Library of Science (2025). *PLOS Open Science Indicators.* [Dataset; License CC BY 4.0]. **PLOS Figshare**. <https://doi.org/10.6084/m9.figshare.21687686.v10>
 
-> Taylor-Grant, Rebecca; Norris, Eilise (2025). *Open Science Indicators for a corpus of 8,131 research articles published by Taylor & Francis journals.* 
-> [Dataset; License CC BY 4.0]. Figshare. <https://doi.org/10.6084/m9.figshare.30316342>
+> Taylor-Grant, Rebecca; Norris, Eilise (2025). *Open Science Indicators for a corpus of 8,131 research articles published by Taylor & Francis journals.* [Dataset; License CC BY 4.0]. **Figshare**. <https://doi.org/10.6084/m9.figshare.30316342>
 
 
 ### OpenAlex Data
